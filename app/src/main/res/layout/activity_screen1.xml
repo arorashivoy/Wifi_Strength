@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Inputs for Matrix A Dimensions -->
+        <EditText
+            android:id="@+id/rowsA"
+            android:hint="Rows in Matrix A"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/colsA"
+            android:hint="Columns in Matrix A"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnEnterMatrixA"
+            android:text="Enter Matrix A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enterMatrixA"
+            android:text="Enter Matrix A"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <GridLayout
+            android:id="@+id/gridMatrixA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:columnCount="1"
+            android:orientation="horizontal" />
+
+        <!-- Inputs for Matrix B Dimensions -->
+        <EditText
+            android:id="@+id/rowsB"
+            android:hint="Rows in Matrix B"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/colsB"
+            android:hint="Columns in Matrix B"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnEnterMatrixB"
+            android:text="Enter Matrix B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enterMatrixB"
+            android:text="Enter Matrix B"
+            android:visibility="gone" />
+
+        <GridLayout
+            android:id="@+id/gridMatrixB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:columnCount="1"
+            android:orientation="horizontal" />
+
+        <!-- Operation Selection -->
+        <RadioGroup
+            android:id="@+id/radioGroupOperations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <RadioButton
+                android:id="@+id/radioAdd"
+                android:text="Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/radioSubtract"
+                android:text="Subtract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/radioMultiply"
+                android:text="Multiply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/radioDivide"
+                android:text="Divide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <!-- Result -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:paddingTop="16dp"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

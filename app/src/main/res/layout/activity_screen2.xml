@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/locationA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Logging - Location A"/>
+
+    <Button
+        android:id="@+id/locationB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Logging - Location B"/>
+
+    <Button
+        android:id="@+id/locationC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Logging - Location C"/>
+
+    <Button
+        android:id="@+id/compareLocations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compare Locations"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/logs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logs will appear here..."
+            android:scrollbars="vertical"/>
+    </ScrollView>
+
+</LinearLayout>
